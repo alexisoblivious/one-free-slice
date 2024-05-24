@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One Free Pizza - Get Your Pizza</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="pizza-logo.png" id="pizza-logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="getpizza.html">Get Your Pizza</a></li>
+          <li><a href="orders.html">Orders</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Get Your Pizza</h1>
+    <p id="getPizzaLoadingMessage" class="loading-message"></p>
+    <p id="getPizzaSuccessMessage" class="success-message"></p>
+    <p id="errorMessage" class="error-message"></p>
+    <form id="pizzaForm">
+      <label for="style">Style:</label>
+      <select id="style" name="style">
+        <option value="">- Select your toppings style -</option>
+        <option value="Hawaiian">Hawaiian</option>
+        <option value="Pepperoni">Pepperoni</option>
+        <option value="Canadian">Canadian</option>
+        <option value="Supreme">Supreme</option>
+        <option value="Cheese">Cheese</option>
+        <option value="Margherita">Margherita</option>
+      </select>
+
+      <label for="crust">Crust:</label>
+      <select id="crust" name="crust">
+        <option value="">- Select your crust style -</option>
+        <option value="Original Crust">Original Crust</option>
+        <option value="Thin Crust">Thin Crust</option>
+        <option value="Gluten-Free Crust">Gluten-Free Crust</option>
+      </select>
+
+      <label for="extraCheese">Extra Cheese:</label>
+      <input type="checkbox" id="extraCheese" name="extraCheese" />
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

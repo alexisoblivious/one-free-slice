@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  background-color: #E5EBEA;
+  color: #001514;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #6b818c;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6b818c;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #E5EBEA;
+  text-decoration: none;
+}
+
+/* Page-specific Styles */
+h1 {
+  color: #001514;
+}
+
+.loading-message,
+.success-message,
+.error-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loading-message {
+  background-color: #6b818c;
+  color: #E5EBEA;
+}
+
+.success-message {
+  background-color: #eb8a90;
+  color: #001514;
+}
+
+.error-message {
+  background-color: #5f464b;
+  color: #E5EBEA;
+}
+
+#pizzaForm {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #6b818c;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #001514;
+}
+
+button[type="submit"] {
+  background-color: #eb8a90;
+  color: #E5EBEA;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #5f464b;
+}
+
+/* Adjustments for the Home page */
+main {
+  padding: 20px;
+}
+
+/* Adjustments for the Orders page */
+#orderList {
+  list-style: none;
+  padding: 0;
+}
+
+#orderList li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #6b818c;
+  border-radius: 5px;
+}
+
+#pizza-logo {
+  height: 80px;
+  padding-left: 20px;
+  
+}
+
+.hidden {
+  display: none;
+}
